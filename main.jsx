@@ -1,6 +1,6 @@
-import React from 'react'
-import { createRoot } from 'react-dom/client'
-import './index.css'
-import Site from './Site.jsx'
-
-createRoot(document.getElementById('root')).render(<Site />)
+# (if case issue from macOS)
+git mv src/main.jsx src/_main.jsx
+git commit -m "temp rename"
+git mv src/_main.jsx src/main.jsx
+git commit -m "fix filename case"
+git push
